@@ -1,0 +1,43 @@
+.formula-container {
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.formula-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.formula-box {
+    padding: 10px;
+    background: #f8f9fa;
+    border-left: 4px solid #007bff;
+}
+
+.main-formula {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.components-list {
+    margin-top: 10px;
+}
+
+.example {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 4px;
+}
+
+.quick-tips {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e3f2fd;
+    border-radius: 6px;
+}

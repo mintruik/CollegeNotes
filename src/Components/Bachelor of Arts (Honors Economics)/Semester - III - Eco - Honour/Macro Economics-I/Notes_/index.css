@@ -1,0 +1,251 @@
+.notes-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.notes-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.meta-item {
+    font-size: 14px;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.meta-row:last-child {
+    margin-bottom: 0;
+}
+
+.notes-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.units-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.unit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unit-button:hover {
+    background-color: #45a049;
+}
+
+.plus-icon {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.unit-content {
+    margin-bottom: 20px;
+}
+
+.notes-section {
+    color: #000000;
+    background: #e3c5c5;
+    padding: 20px;
+}
+
+.notes-section h3 {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.notes-section h4 {
+    color: #4CAF50;
+    margin: 20px 0 10px 0;
+}
+
+.notes-section ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.notes-section li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.micro, .macro {
+    padding: 10px;
+}
+
+.micro h5, .macro h5 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comparison-table th {
+    background: #3498db;
+    color: white;
+    padding: 15px 25px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.comparison-table td {
+    padding: 15px 25px;
+    border: 1px solid #eee;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.comparison-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.comparison-table th,
+.comparison-table td {
+    width: 50%;
+}
+
+.fun-fact {
+    color: #4a553c;
+    font-style: italic;
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 3px solid #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .notes-container {
+        padding: 10px;
+    }
+
+    .meta-row {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .unit-button {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Add these styles to your existing CSS */
+.flowchart-toggle-button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.flowchart-toggle-button:hover {
+    background: #45a049;
+}
+
+/* Animation for FlowChart appearance */
+.flowchart-container {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hide-notes-button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+}
+
+.hide-notes-button:hover {
+    background: #45a049;
+}
